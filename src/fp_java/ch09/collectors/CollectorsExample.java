@@ -96,11 +96,9 @@ public class CollectorsExample {
 			.collect(Collectors.groupingBy(dish -> {
 				if(dish.getCalories() <= 400) {
 					return "DIET"; // 그룹핑 기준
-				}
-				else if (dish.getCalories() <= 700) {
+				} else if (dish.getCalories() <= 700) {
 					return "NORMAL"; // 그룹핑 기준
-				}
-				else {
+				} else {
 					return "FAT"; // 그룹핑 기준
 				}
 			}));
